@@ -5,30 +5,37 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server",
-    "start": "webpack"
+    "dev": "NODE_ENV=development webpack-dev-server",
+    "start": "NODE_ENV=production webpack"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1"
   },
   "devDependencies": {
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.4",
+    "babel-loader": "^8.0.5",
     "css-loader": "^2.1.0",
-    "webpack": "^4.28.3",
-    "webpack-cli": "^3.1.2",
     "style-loader": "^0.23.1",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.1.14"
   },
   "babel": {
     "presets": [
       "@babel/env",
       "@babel/react"
+    ],
+    "plugins": [
+      "syntax-dynamic-import"
     ]
+  },
+  "optionalDependencies": {
+    "mini-css-extract-plugin": "^0.5.0"
   }
 }
