@@ -15,11 +15,11 @@
     "react-dom": "^16.8.1"
   },
   "devDependencies": {
-    "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "css-loader": "^2.1.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.29.3",

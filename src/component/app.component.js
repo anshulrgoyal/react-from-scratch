@@ -1,14 +1,14 @@
-import React, { useState, Fragment } from "react";
+import React, { useState, useCallback } from "react";
 import s from "./app.component.css";
 
-function MyComponent(props) {
-  const [name, setState] = useState("anshul");
-  const handleCahnge = e => setState(e.target.value);
+function MyComponent() {
+  const [name, setState] = useState("anshul GoYAL");
+  const handleCahnge = useCallback(e => setState(e.target.value));
   return (
-    <Fragment>
+    <>
       <div className={s.intro}>{name}</div>
       <input value={name} onChange={handleCahnge} />
-    </Fragment>
+    </>
   );
 }
 

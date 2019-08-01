@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, Fragment } from "react";
+import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom";
 
 const App = lazy(() => import("./component/app.component"));
